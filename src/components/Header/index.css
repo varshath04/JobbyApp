@@ -1,0 +1,105 @@
+/* HEADER BAR */
+.navbar {
+  width: 100%;
+  background-color: #202020;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #2c364c;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  width: 95%;
+  max-width: 1350px; /* wide layout alignment */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO LEFT SIDE */
+.home-website-logo {
+  width: 125px;
+}
+
+/* NAV LINKS */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+/* Desktop Navigation */
+.nav-link-lg {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.nav-link-lg:hover {
+  color: #6366f1; /* highlight */
+}
+
+/* Mobile Icons Hidden in desktop */
+.nav-link-sm {
+  display: none;
+}
+
+/* Logout Desktop */
+.logout-button-lg {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.logout-button-lg:hover {
+  background-color: #6366f1;
+}
+
+/* Logout / nav icons - mobile */
+.logout-button-sm {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.small-header-icons,
+.logout-icon-sm {
+  font-size: 23px;
+  color: #f1f5f9;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .nav-link-lg {
+    display: none;
+  }
+
+  .logout-button-lg {
+    display: none;
+  }
+
+  .nav-link-sm {
+    display: block;
+  }
+
+  .logout-button-sm {
+    display: block;
+  }
+}
